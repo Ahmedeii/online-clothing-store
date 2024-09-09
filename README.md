@@ -51,4 +51,4 @@ To run the project locally, follow these steps:
   run backend file : node --watch index.js
   run frontend file : npm start
 
-  The app will run on http://localhost:3000.
+  The app will run on https://for-deploy--clothingstore111.netlify.app/.
