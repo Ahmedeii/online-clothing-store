@@ -46,6 +46,7 @@ const Cart = () => {
 
             <div style={{ display: "flex", alignItems: "center" }}>
               <IconButton
+              aria-label="Add"
                 sx={{ color: "#1976d2", ml: "10px" }}
                 onClick={() => {
                   dispatch(increaseQuantity(item));
@@ -57,6 +58,7 @@ const Cart = () => {
               <StyledBadge badgeContent={item.quantity} color="secondary" />
 
               <IconButton
+              aria-label="remove"
                 sx={{ color: "#1976d2", mr: "10px" }}
                 onClick={() => {
                   dispatch(decreaseQuantity(item));
@@ -71,6 +73,7 @@ const Cart = () => {
             </div>
 
             <Button
+            aria-label="delete"
               sx={{ display: { xs: "none", md: "inline-flex" } }}
               variant="text"
               color="error"
@@ -82,6 +85,7 @@ const Cart = () => {
             </Button>
 
             <IconButton
+            aria-label="delete"
               sx={{
                 color: "#ef5350",
                 display: { xs: "inline-flex", md: "none" },
@@ -113,7 +117,7 @@ const Cart = () => {
 
         <Divider />
 
-        <Button fullWidth color="primary" variant="contained">
+        <Button aria-label="checkout" fullWidth color="primary" variant="contained">
           CHECKOUT
         </Button>
       </Paper>

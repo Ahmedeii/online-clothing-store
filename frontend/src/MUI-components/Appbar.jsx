@@ -45,7 +45,7 @@ const Appbar = ({ drawerWidth, showDrawer }) => {
           Ali Hassan
         </Typography>
 
-        <Avatar alt="Remy Sharp" src="./imges/Ahmed.jpg" />
+        <Avatar alt="Remy Sharp" src="" />
       </Toolbar>
     </AppBar>
   );

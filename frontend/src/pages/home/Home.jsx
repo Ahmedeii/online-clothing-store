@@ -102,12 +102,13 @@ const Home = () => {
                   >
                     <IconButton
                       color="primary"
+                      aria-label="add"
                       sx={{ ml: "10px" }}
                       onClick={() => {
                         dispatch(increaseQuantity(item));
                       }}
                     >
-                      <Add fontSize="small" />
+                      <Add  fontSize="small" />
                     </IconButton>
 
                     <StyledBadge
@@ -117,6 +118,7 @@ const Home = () => {
 
                     <IconButton
                       color="primary"
+                      aria-label="remove"
                       sx={{ mr: "10px" }}
                       onClick={() => {
                         dispatch(decreaseQuantity(item));
@@ -128,6 +130,7 @@ const Home = () => {
                 ) : (
                   <Button
                     sx={{ textTransform: "capitalize", p: 1, lineHeight: 1.1 }}
+                    aria-label="Add to cart"
                     variant="contained"
                     color="primary"
                     onClick={() => {

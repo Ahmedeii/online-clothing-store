@@ -93,7 +93,6 @@ const ProductDetails = () => {
               tab={handleTab}
               myRef={myRef}
             />
-            {/* <button className="cart">Add to cart</button> */}
             {selectedProductsID.includes(data.id) ? (
               <div
                 style={{
@@ -103,6 +102,7 @@ const ProductDetails = () => {
                 }}
               >
                 <IconButton
+                aria-label="remove"
                   color="primary"
                   sx={{ mr: "10px" }}
                   onClick={() => {
@@ -118,6 +118,7 @@ const ProductDetails = () => {
                 />
 
                 <IconButton
+                aria-label="add"
                   color="primary"
                   sx={{ ml: "10px" }}
                   onClick={() => {
@@ -129,6 +130,7 @@ const ProductDetails = () => {
               </div>
             ) : (
               <Button
+              aria-label="add to cart"
                 sx={{ textTransform: "capitalize", p: 1, lineHeight: 1.1 }}
                 variant="contained"
                 color="primary"
