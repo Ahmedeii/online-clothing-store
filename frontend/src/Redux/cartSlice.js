@@ -103,7 +103,6 @@ export const counterSlice = createSlice({
   },
 });
 
-//  دائماً هتنساهااااااااااااااااااااااااااااااااااااااع
 export const { deleteProduct, addToCart, increaseQuantity, decreaseQuantity } =
   counterSlice.actions;
 

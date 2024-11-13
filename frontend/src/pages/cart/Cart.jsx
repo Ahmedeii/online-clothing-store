@@ -40,7 +40,7 @@ const Cart = () => {
         return (
           <Paper key={item.id} dir="rtl" className="item-container">
             <div className="img-title-parent">
-              <img src={item.imageLink[0]} alt="" />
+              <img src={item.imageLink[0]} alt="" loading="lazy"/>
               <p className="product-name">{item.productName}</p>
             </div>
 

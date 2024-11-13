@@ -80,6 +80,7 @@ const Home = () => {
               <CardMedia
                 component="img"
                 height="277"
+                loading="lazy" 
                 image={item.imageLink[0]}
                 alt="Paella dish"
                 onClick={() => {
