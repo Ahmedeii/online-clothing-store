@@ -30,7 +30,7 @@ const Home = () => {
   // data =>ALL products
   const { data, error, isLoading } = useGetproductsByNameQuery();
   const dispatch = useDispatch();
-  const navitage = useNavigate();
+  const navigate = useNavigate();
 
   const { selectedProducts, selectedProductsID } = useSelector(
     // @ts-ignore
@@ -84,7 +84,7 @@ const Home = () => {
                 image={item.imageLink[0]}
                 alt="Paella dish"
                 onClick={() => {
-                  navitage(`product-details/${item.id}`);
+                  navigate(`product-details/${item.id}`);
                 }}
               />
               <CardContent>
